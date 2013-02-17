@@ -9,6 +9,7 @@ function call_heating($signal) {
     $value = bindec($signal);
 
     exec(dirname ( __FILE__ ) . "/hidwrite ".$idVendor." ".$idProduct." ".$value);
+    echo date("Y-m-d\TH:i:s\Z")." ".$signal."\r\n";
     }
 
 call_heating('00000001');
