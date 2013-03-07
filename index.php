@@ -9,7 +9,6 @@ $base_path = '/var/www';
 $idVendor = '0x12bf'; // e.g. 0x12bf
 $idProduct = '0xff03'; // e.g. 0xff03
 
-
 function call_heating($signal) {
     $idVendor = '0x12bf'; // e.g. 0x12bf
     $idProduct = '0xff03'; // e.g. 0xff03
