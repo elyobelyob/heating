@@ -1,6 +1,6 @@
 <?php
 
-echo date("Y-m-d\TH:i:s\Z")." call heating on\r\n";
+echo date("Y-m-d\TH:i:s\Z")." call pass control to drayton\r\n";
 
 function call_heating($signal) {
     $idVendor = '0x12bf'; // e.g. 0x12bf
@@ -14,4 +14,4 @@ function call_heating($signal) {
 
 call_heating('00000000');
 
-echo date("Y-m-d\TH:i:s\Z")." heating on\r\n";
+echo date("Y-m-d\TH:i:s\Z")." pass control to drayton\r\n";

@@ -66,6 +66,7 @@ if /sbin/ifconfig $wlan | grep -q "inet addr:" ; then
     echo "Network is Okay"
 else
     echo "Network connection down! Attempting reconnection."
+    # php /var/www/heating/control2drayton.php
     /sbin/ifdown $wlan
     sleep 5
     /sbin/ifup --force $wlan
